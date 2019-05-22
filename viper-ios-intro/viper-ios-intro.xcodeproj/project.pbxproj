@@ -14,6 +14,10 @@
 		380F40762294906600EE0D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380F40742294906600EE0D3B /* LaunchScreen.storyboard */; };
 		380F407F229491E200EE0D3B /* AddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F407D229491E200EE0D3B /* AddressListTableViewCell.swift */; };
 		380F4080229491E200EE0D3B /* AddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380F407E229491E200EE0D3B /* AddressListTableViewCell.xib */; };
+		380F40832295C2F000EE0D3B /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F40822295C2F000EE0D3B /* AddressListViewController.swift */; };
+		380F40852295C30200EE0D3B /* AddressListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F40842295C30200EE0D3B /* AddressListPresenter.swift */; };
+		380F40872295C31000EE0D3B /* AddressListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F40862295C31000EE0D3B /* AddressListInteractor.swift */; };
+		380F40892295C31E00EE0D3B /* AddressListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F40882295C31E00EE0D3B /* AddressListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		380F40772294906600EE0D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380F407D229491E200EE0D3B /* AddressListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTableViewCell.swift; sourceTree = "<group>"; };
 		380F407E229491E200EE0D3B /* AddressListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressListTableViewCell.xib; sourceTree = "<group>"; };
+		380F40822295C2F000EE0D3B /* AddressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
+		380F40842295C30200EE0D3B /* AddressListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListPresenter.swift; sourceTree = "<group>"; };
+		380F40862295C31000EE0D3B /* AddressListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListInteractor.swift; sourceTree = "<group>"; };
+		380F40882295C31E00EE0D3B /* AddressListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		380F406A2294906400EE0D3B /* viper-ios-intro */ = {
 			isa = PBXGroup;
 			children = (
+				380F40812295C2BF00EE0D3B /* AddressListModule */,
 				380F406B2294906400EE0D3B /* AppDelegate.swift */,
 				380F406D2294906400EE0D3B /* AddressListViewController.swift */,
 				380F406F2294906400EE0D3B /* Main.storyboard */,
@@ -68,6 +77,17 @@
 				380F407E229491E200EE0D3B /* AddressListTableViewCell.xib */,
 			);
 			path = "viper-ios-intro";
+			sourceTree = "<group>";
+		};
+		380F40812295C2BF00EE0D3B /* AddressListModule */ = {
+			isa = PBXGroup;
+			children = (
+				380F40822295C2F000EE0D3B /* AddressListViewController.swift */,
+				380F40842295C30200EE0D3B /* AddressListPresenter.swift */,
+				380F40862295C31000EE0D3B /* AddressListInteractor.swift */,
+				380F40882295C31E00EE0D3B /* AddressListRouter.swift */,
+			);
+			path = AddressListModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380F40852295C30200EE0D3B /* AddressListPresenter.swift in Sources */,
+				380F40872295C31000EE0D3B /* AddressListInteractor.swift in Sources */,
 				380F407F229491E200EE0D3B /* AddressListTableViewCell.swift in Sources */,
 				380F406E2294906400EE0D3B /* AddressListViewController.swift in Sources */,
 				380F406C2294906400EE0D3B /* AppDelegate.swift in Sources */,
+				380F40892295C31E00EE0D3B /* AddressListRouter.swift in Sources */,
+				380F40832295C2F000EE0D3B /* AddressListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
