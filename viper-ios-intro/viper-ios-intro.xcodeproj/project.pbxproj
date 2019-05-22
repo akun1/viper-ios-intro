@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		380F406C2294906400EE0D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F406B2294906400EE0D3B /* AppDelegate.swift */; };
-		380F406E2294906400EE0D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F406D2294906400EE0D3B /* ViewController.swift */; };
+		380F406E2294906400EE0D3B /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F406D2294906400EE0D3B /* AddressListViewController.swift */; };
 		380F40712294906400EE0D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380F406F2294906400EE0D3B /* Main.storyboard */; };
 		380F40732294906600EE0D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380F40722294906600EE0D3B /* Assets.xcassets */; };
 		380F40762294906600EE0D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380F40742294906600EE0D3B /* LaunchScreen.storyboard */; };
+		380F407F229491E200EE0D3B /* AddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F407D229491E200EE0D3B /* AddressListTableViewCell.swift */; };
+		380F4080229491E200EE0D3B /* AddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380F407E229491E200EE0D3B /* AddressListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		380F40682294906400EE0D3B /* viper-ios-intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viper-ios-intro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		380F406B2294906400EE0D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		380F406D2294906400EE0D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		380F406D2294906400EE0D3B /* AddressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		380F40702294906400EE0D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		380F40722294906600EE0D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		380F40752294906600EE0D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		380F40772294906600EE0D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380F407D229491E200EE0D3B /* AddressListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTableViewCell.swift; sourceTree = "<group>"; };
+		380F407E229491E200EE0D3B /* AddressListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				380F406B2294906400EE0D3B /* AppDelegate.swift */,
-				380F406D2294906400EE0D3B /* ViewController.swift */,
+				380F406D2294906400EE0D3B /* AddressListViewController.swift */,
 				380F406F2294906400EE0D3B /* Main.storyboard */,
 				380F40722294906600EE0D3B /* Assets.xcassets */,
 				380F40742294906600EE0D3B /* LaunchScreen.storyboard */,
 				380F40772294906600EE0D3B /* Info.plist */,
+				380F407D229491E200EE0D3B /* AddressListTableViewCell.swift */,
+				380F407E229491E200EE0D3B /* AddressListTableViewCell.xib */,
 			);
 			path = "viper-ios-intro";
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			files = (
 				380F40762294906600EE0D3B /* LaunchScreen.storyboard in Resources */,
 				380F40732294906600EE0D3B /* Assets.xcassets in Resources */,
+				380F4080229491E200EE0D3B /* AddressListTableViewCell.xib in Resources */,
 				380F40712294906400EE0D3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				380F406E2294906400EE0D3B /* ViewController.swift in Sources */,
+				380F407F229491E200EE0D3B /* AddressListTableViewCell.swift in Sources */,
+				380F406E2294906400EE0D3B /* AddressListViewController.swift in Sources */,
 				380F406C2294906400EE0D3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U9T496487P;
 				INFOPLIST_FILE = "viper-ios-intro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U9T496487P;
 				INFOPLIST_FILE = "viper-ios-intro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
